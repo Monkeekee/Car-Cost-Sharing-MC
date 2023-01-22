@@ -5,6 +5,11 @@ Created on Mon Nov 16 14:32:31 2021
 
 @author: Chaimae
 """
+
+"""
+Chaimae ERREBIAI - Matthieu AKHAVAN NIAKI
+"""
+
 from sympy import symbols, Eq, solve
 import itertools
 
@@ -80,13 +85,13 @@ def resolution_du_pbm(taille,prixkm,List,Dist):
     # les couts si seuls, to display s
     s = print_cout_si_seul(List)
     print("--------------------------------")
-    s1 = "Méthodes par Proportionnalité :"
+    s1 = "--------------------------------\nMéthodes par Proportionnalité :"
     #print("Méthodes par Proportionnalité :")
     prop = proportionnel(Dist)
     ll = []
     ll1 = []
     for i in range(taille):
-        ph = "\t\nLe trajet de " +List[i][0] + " lui revient à " + str(round(float(prop[i]),2)) + " pour aller jusqu'à " + List[i][1]+"\n" 
+        ph = "\t\nLe trajet de " +List[i][0] + " lui revient à " + str(round(float(prop[i]),2)) + " pour aller jusqu'à " + List[i][1] 
         ll.append(ph)
         # print("\tLe trajet de " +List[i][0] + " lui revient à " + str(round(float(prop[i]),2)) + " pour aller jusqu'à " + List[i][1] )
     s2 = "--------------------------------"
@@ -95,7 +100,7 @@ def resolution_du_pbm(taille,prixkm,List,Dist):
     # print("Méthodes par Séparabilité :")
     sep = separation(Dist)
     for i in range(taille):
-        ph1 = "\t\nLe trajet de "+List[i][0] + " lui revient à " + str(round(sep[i],2)) + " pour aller jusqu'à " + List[i][1]+"\n" 
+        ph1 = "\t\nLe trajet de "+List[i][0] + " lui revient à " + str(round(sep[i],2)) + " pour aller jusqu'à " + List[i][1]
         ll1.append(ph1)
         # print("\tLe trajet de "+List[i][0] + " lui revient à " + str(round(sep[i],2)) + " pour aller jusqu'à " + List[i][1] )
     # print("--------------------------------")

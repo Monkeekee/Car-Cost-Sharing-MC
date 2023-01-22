@@ -1,2 +1,2 @@
-
-__pycache__/TP_CASE_STUDY_3_v3.cpython-311.pyc
+*.pyc
+.DS_Store

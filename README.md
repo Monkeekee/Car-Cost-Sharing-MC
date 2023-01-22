@@ -1,10 +1,23 @@
-# Comment utiliser notre programme :
+# Lisez-moi
 
-+ Exécuter dans un environnement Python 3.x le notebook CASE_STUDY et suivre les instructions du terminal.
-+ Il suffit de rentrer les informations sur les passagers et les détails du voyage un a un.
-+ Les bibliothèques Python sympy et itertools sont requises.
+Auteurs : Chaimae ERREBIAI - Matthieu AKHAVAN NIAKI
 
-En vous souhaitant un agréable test, à votre toute disposition par e-mail universitaire.
+## Pour lancer l'application il faut les 2 fichiers
 
-Matthieu AKHAVAN NIAKI
-M2 IAFA.
++ interface_graphique.py
++ projet_covoi.py
+
+## Bibliothèques Python 3 nécessaires
+
++ Sympy (pour les calculs) `pip install sympy` si vous ne l'avez pas.
++ Tkinter (pour l'interface graphique)
+
+## Lancer l'application
+
+Exécuter la commande dans un terminal : 
+`python3 interface_graphique.py`
+
+## Comment faire
+
+Ajouter les voyageurs successivement puis appuyer sur 'Calculer'
+Vous pouvez tester des allocations en appuyant sur 'Test d allocation'
